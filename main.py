@@ -6,20 +6,11 @@ from bottle import post, run, request
 from bottle import jinja2_template as template
 
 
-DEFAULT_TEMPLATE = '{{app.name}}: {{title}} - {{summary}} ({{url}})'
-TEMPLATES = {
-    'errorgroup': {
-        'fixed': '{{app.name}}: {{title}} - {{summary}} ({{url}})',
-    },
-}
-"""Templates.
+def get_template(data):
+    if data.get('html_url'):
+        return '{{app.name}}: {{title}} - {{summary}} ({{subject.html_url}})'
 
-Mapping subject type and action to templates.
-"""
-
-
-def get_template(subject_type, action):
-    return TEMPLATES.get(subject_type, {}).get(action, DEFAULT_TEMPLATE)
+    return '{{app.name}}: {{title}} - {{summary}}'
 
 
 DEFAULT_COLOR = "yellow"
@@ -45,8 +36,7 @@ if not HIPCHAT_ROOM_ID:
 
 
 def send(data):
-    rendered_activity = template(get_template(data['subject_type'],
-                                              data['action']), **data)
+    rendered_activity = template(get_template(data), **data)
     message_data = {
         'auth_token': HIPCHAT_AUTH_TOKEN,
         'from': 'Opbeat',
