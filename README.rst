@@ -15,4 +15,8 @@ Setup
 
       $ heroku config:set HIPCHAT_AUTH_TOKEN=<auth token> HIPCHAT_ROOM_ID=<room ID>
 4. Deploy!
-5. ... wait for Opbeat to release so you can add the webhook.
+5. Set the hook target in your organization settings on Opbeat to:
+
+   ::
+
+      http://<your Heroku application's URL>/new-activity
