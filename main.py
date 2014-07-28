@@ -54,8 +54,9 @@ def send(data):
 @post('/new-activity')
 def new_activity():
     data = request.json
+    print 'Activity:', data
     send(data)
-    return "ok"
+    return "OK"
 
 
 run(host='0.0.0.0', port=int(os.environ.get("PORT", 8080)))
