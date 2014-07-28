@@ -46,7 +46,8 @@ def send(data):
     resp = requests.post('https://api.hipchat.com/v1/rooms/message',
                          data=message_data)
     if resp.status_code != 200:
-        print(resp.status_code, resp.text)
+        print >> sys.stderr, 'Failed to send activity to Hipchat (status ' \
+            'code %d): %s' % (resp.status_code, resp.text)
     else:
         print("Sent activity to Hipchat")
 
