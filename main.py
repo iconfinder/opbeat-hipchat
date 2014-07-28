@@ -5,9 +5,21 @@ import sys
 from bottle import post, run, request
 from bottle import jinja2_template as template
 
-activity_template = """
-{{app['name']}}: <{{html_url}}|{{title}}>\n{{summary}}
+
+DEFAULT_TEMPLATE = '{{app.name}}: {{title}} - {{summary}} ({{url}})'
+TEMPLATES = {
+    'errorgroup': {
+        'fixed': '{{app.name}}: {{title}} - {{summary}} ({{url}})',
+    },
+}
+"""Templates.
+
+Mapping subject type and action to templates.
 """
+
+
+def get_template(subject_type, action):
+    return TEMPLATES.get(subject_type, {}).get(action, DEFAULT_TEMPLATE)
 
 
 DEFAULT_COLOR = "yellow"
@@ -33,9 +45,10 @@ if not HIPCHAT_ROOM_ID:
 
 
 def send(data):
-    rendered_activity = template(activity_template, **data)
+    rendered_activity = template(get_template(data['subject_type'],
+                                              data['action']), **data)
     message_data = {
-        'auth_token': settings.HIPCHAT_AUTH_TOKEN,
+        'auth_token': HIPCHAT_AUTH_TOKEN,
         'from': 'Opbeat',
         'room_id': HIPCHAT_ROOM_ID,
         'message': rendered_activity,
@@ -49,7 +62,7 @@ def send(data):
         print >> sys.stderr, 'Failed to send activity to Hipchat (status ' \
             'code %d): %s' % (resp.status_code, resp.text)
     else:
-        print("Sent activity to Hipchat")
+        print "Sent activity to Hipchat"
 
 
 @post('/new-activity')
