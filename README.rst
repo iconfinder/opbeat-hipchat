@@ -14,6 +14,7 @@ Setup
    ::
 
       $ heroku config:set HIPCHAT_AUTH_TOKEN=<auth token> HIPCHAT_ROOM_ID=<room ID>
+
 4. Deploy!
 5. Set the hook target in your organization settings on Opbeat to:
 
