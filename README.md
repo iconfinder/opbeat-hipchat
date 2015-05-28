@@ -1,5 +1,7 @@
 # Opbeat for HipChat
 
+[![Build status](https://travis-ci.org/iconfinder/opbeat-hipchat.svg?branch=master)](https://travis-ci.org/iconfinder/opbeat-hipchat)
+
 Get Opbeat activity notifications into HipChat using the new Opbeat webhooks.
 
 
