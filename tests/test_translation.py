@@ -41,7 +41,7 @@ class ActivityTranslatorTestCase(TestCase):
                 }),
         ):
             with open(os.path.join(fixtures_path, fixture_name), 'rb') as f:
-                fixture = json.loads(f.read())
+                fixture = json.loads(f.read().decode('utf-8'))
 
             actual = translator.translate(fixture)
             self.assertEquals(expected, actual)
