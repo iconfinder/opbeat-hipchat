@@ -2,10 +2,8 @@ language: python
 notifications:
   email: false
 python:
-  - "2.6"
   - "2.7"
-  - "3.3"
   - "3.4"
-install: "pip install -r requirements.txt --use-mirrors"
+install: "pip install -r requirements.txt -r dev-requirements.txt --use-mirrors"
 script:
   - flake8 main.py

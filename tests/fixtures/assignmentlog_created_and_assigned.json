@@ -1,0 +1,36 @@
+{
+    "id": "2d8d89dcd5d5bc4bd8fb429d74d76cdf",
+    "type_name": "activity",
+    "html_url": "https://opbeat.com/iconfinder/nextfinder/errors/821/#activity-509c143bf42840669f68e606e1e5feee",
+    "author": null,
+    "created": "2015-05-27T13:57:28Z",
+    "occurred": "2015-05-27T13:57:28Z",
+    "title": "Error group E#821",
+    "summary": "The error group was first seen and auto-assigned to Nick",
+    "organization": {
+        "id": "c5ef8145a9c7d7e3d6298ae1f2bdc5fd",
+        "name": "Iconfinder",
+        "short_name": "iconfinder"
+    },
+    "app": {
+        "id": "ff77abc831",
+        "name": "Nextfinder",
+        "short_name": "nextfinder"
+    },
+    "subject_type": "assignmentlog",
+    "subject": {
+        "type_name": "assignmentlog",
+        "errorgroup": {
+            "type_name": "errorgroup",
+            "number": 821,
+            "created": "2015-05-27T13:57:27Z",
+            "first_seen": "2015-05-27T13:57:26Z",
+            "last_seen": "2015-05-27T13:57:26Z",
+            "times_seen": {
+                "total": 1
+            },
+            "html_url": "https://opbeat.com/iconfinder/nextfinder/errors/821/"
+        }
+    },
+    "action": "created_and_assigned"
+}
