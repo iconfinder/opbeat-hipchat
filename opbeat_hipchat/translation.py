@@ -58,8 +58,8 @@ class ActivityTranslator(object):
 
             app_name = app['name']
             app_url = 'https://opbeat.com/{}/{}/'.format(
-                app['short_name'],
-                organization['short_name']
+                organization['short_name'],
+                app['short_name']
             )
         except KeyError:
             return None

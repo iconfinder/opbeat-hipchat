@@ -23,7 +23,7 @@ class ActivityTranslatorTestCase(TestCase):
                     'color': 'red',
                     'message_format': 'html',
                     'message':
-                    '<a href="https://opbeat.com/nextfinder/iconfinder/" title'
+                    '<a href="https://opbeat.com/iconfinder/nextfinder/" title'
                     '="Nextfinder">Nextfinder</a>: <a href="https://opbeat.com'
                     '/iconfinder/nextfinder/errors/821/" title="Error group E#'
                     '821">Error group E#821</a> - The error group was first se'
@@ -33,7 +33,7 @@ class ActivityTranslatorTestCase(TestCase):
                     'color': 'purple',
                     'message_format': 'html',
                     'message':
-                    '<a href="https://opbeat.com/nextfinder/iconfinder/" title'
+                    '<a href="https://opbeat.com/iconfinder/nextfinder/" title'
                     '="Nextfinder">Nextfinder</a>: <a href="https://opbeat.com'
                     '/iconfinder/nextfinder/releases/1192/" title="Release R#1'
                     '192">Release R#1192</a> - 2 commits (+27/-10) by Nick wer'
