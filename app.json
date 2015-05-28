@@ -6,7 +6,7 @@
     "keywords": ["opbeat", "hipchat", "error logging", "release tracking"],
     "success_url": "/setup",
     "env": {
-        "HIPCHAT_AUTH_TOKEN": null,
-        "HIPCHAT_ROOM_ID": null
+        "HIPCHAT_ROOM_AUTH_TOKEN": null,
+        "HIPCHAT_ROOM": null
     }
 }
