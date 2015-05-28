@@ -1,0 +1,43 @@
+{
+    "id": "e513bf9b2745c23f35579b3d336e51f5",
+    "type_name": "activity",
+    "url": "https://opbeat.com/api/v2/organizations/da05a93f83bf5dc362783e06971384a4/activities/e513bf9b2745c23f35579b3d336e51f5",
+    "html_url": "https://opbeat.com/iconfinder/nextfinder/releases/1192/#activity-e513bf9b2745c23f35579b3d336e51f5",
+    "author": null,
+    "created": "2015-05-27T13:54:03Z",
+    "occurred": "2015-05-27T13:54:01Z",
+    "title": "Release R#1192",
+    "summary": "2 commits (+27/-10) by Nick were deployed.",
+    "organization": {
+        "id": "c5ef8145a9c7d7e3d6298ae1f2bdc5fd",
+        "name": "Iconfinder",
+        "short_name": "iconfinder"
+    },
+    "app": {
+        "id": "ff77abc831",
+        "name": "Nextfinder",
+        "short_name": "nextfinder"
+    },
+    "subject_type": "release",
+    "subject": {
+        "id": "2d8d89dcd5d5bc4bd8fb429d74d76cdf",
+        "type_name": "release",
+        "number": 1192,
+        "created": "2015-05-27T13:54:01Z",
+        "html_url": "https://opbeat.com/iconfinder/nextfinder/releases/1192/",
+        "first_deployment_completed": "2015-05-27T13:54:01Z",
+        "last_deployment_completed": "2015-05-27T13:54:02Z",
+        "num_comments": 0,
+        "num_machines": 2,
+        "num_commits": 2,
+        "num_component_changes": 1,
+        "total_additions": 27,
+        "total_deletions": 10,
+        "time_to_release": {
+            "seconds": 2727,
+            "text_long": "45 minutes",
+            "text_short": "45m"
+        }
+    },
+    "action": "created"
+}
