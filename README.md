@@ -5,7 +5,7 @@ Get Opbeat activity notifications into HipChat using the new Opbeat webhooks.
 
 ## Setup
 
-1. Get a hold of a HipChat API v2 notification token ([if you don't have one, you can create it under your group's API settings](https://hipchat.com/admin/api), requires admin access) and the ID of the room where you want notifications to be posted ([get it here](https://hipchat.com/rooms), click on a room and look for "API ID")
+1. Get a hold of a HipChat API v2 token ([if you don't have one, you can create it under your API access settings](https://hipchat.com/account/api)) and the ID of the room where you want notifications to be posted ([get it here](https://hipchat.com/rooms), click on a room and look for "API ID")
 
 1. Press this button to create a new Heroku app:
 
